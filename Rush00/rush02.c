@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   rush02.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lgoncalv <lgoncalv@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: gcalazan <gcalazan@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/03 13:09:12 by gcalazan          #+#    #+#             */
-/*   Updated: 2021/04/04 13:56:59 by lgoncalv         ###   ########.fr       */
+/*   Updated: 2021/04/16 16:48:12 by gcalazan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	rush(int x, int y)
 
 	i = 1;
 	j = 1;
-	while (j <= y)
+	while (j <= y && (x > 0 && y > 0)) /*Correção em cado de variavel zero*/
 	{
 		while (i <= x)
 		{
